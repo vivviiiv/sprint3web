@@ -1,0 +1,373 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    background: #fff;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+/* tamanho da página sem o footer (se der problema é só aumentar) */
+main {
+    height: 150vh;
+}
+
+/* começo da parte de cima LOGO PESQUISA ENTRAR */
+.acima {
+    background-color: #f7dbd2;
+    /* background-color: #b1835d; */
+    display: flex;
+    padding: 5px auto 0 10px;
+    margin: 0;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo{
+    display: block;
+    /* background-color: #b15d9f; */
+    margin: 5px 830px 0 40px;
+}
+img[alt="logo"] {
+    width: 130px;
+    height: auto;
+    padding-bottom: 0px;
+}
+.login{
+    width: fit-content;
+    margin-left: 0;
+    padding-left: 0;
+    /* background-color: #5cb16e; */
+}
+img[alt="login"] {
+    width: 35px;
+    padding: 0px;
+    margin-right: 40px;
+    margin-left: 0px;
+    border: none;
+}
+img[alt="pesquisar"] {
+    width: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.pesquisa{
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    margin-right: 20px;
+    padding-right: 0;
+    /* background-color: #5d6bb1; */
+    border-radius: 60px;
+    border: 1.5px solid #dbdbdb00;
+}
+.pesquisa:hover {
+    border: 1.5px solid #faefeb;
+    background-color: #fff;
+    transition: 0.3s;
+    cursor: text;
+}
+
+
+/* deixando ambas as imagens pretas */
+img[alt="login"],
+img[alt="pesquisar"] {
+    border-radius: 50px;
+    background-color: #ffffff00;
+    filter: grayscale(100%) brightness(0%);
+}
+
+/* HOVER */
+.login img:hover, .prev-button:hover, .next-button:hover, #socialmedia .footer-link2:hover {
+    opacity: 0.7;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+
+
+/* começo do menu */
+.menu {
+    background-color: #faefeb;
+    display: flex;
+    padding: 3px;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1.5px solid #f7dbd2;
+}
+.item {
+    opacity: 100%;
+    width: 130px;
+    height: auto;
+    padding: 5px;
+    margin-left: 20px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.item a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+.item a:hover {
+    border-bottom: #000 1.5px solid;
+    transition: 0.15s;
+}
+/*fim do menu*/
+
+
+
+
+
+/* carrossel */
+.slider {
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding: 0;
+    padding-left: 20px;
+    width: 97.1%;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #5d6bb1; */
+}
+.slide {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+    /* background-color: #8491dd; */
+}
+.slide img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.slide.active {
+    opacity: 1;
+}
+.prev-button,
+.next-button {
+    position: absolute;
+    margin-top: 8rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 85px;
+    color: #000000;
+    cursor: pointer;
+}
+.prev-button {
+    left: -3px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.next-button {
+    right: 24px;
+}
+
+
+
+
+
+/* filtros com fotos dos animais */
+.item2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 98.5%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    /* background-color: #5cb16e; */
+}
+.item2 img {
+    width: 80px;
+    background-color: #dbdbdb;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px #f7dbd26e;
+}
+.item2 img:hover, .item2 a:hover img {
+    transform: scale(110%);
+    transition: 0.2s;
+    background-color: #f7dbd2;
+    /* background-color: #faefeb; */
+}
+.item2 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+
+
+/* começo do meio do site */
+.conteudo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: 17px;
+    text-align: center;
+    color: #000;
+    /* background-color: #ac5a7b; */
+}
+.um,.dois {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* muda a posição dos itens HORIZONTALMENTE */
+    align-items: center;
+    /* muda a posição dos itens VERTICALMENTE */
+    width: 220px;
+    height: 60px;
+    border-radius: 7px;
+    background-color: #dbdbdb;
+    /* background-color: #e28aad; */
+    color: #000;
+    font-weight: bold;
+}
+.conteudo a {
+    text-decoration: none;
+    color: #000;
+}
+.um, .dois {
+    text-align: center;
+    cursor: pointer;
+}
+.um p {
+    cursor: pointer;
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #454545;
+}
+.um span {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    color: #454545;
+    text-decoration: underline;
+}
+
+
+
+
+/* começo do footer */
+footer {
+    width: 100%;
+    color: #000;
+    font-size: 17px;
+}
+footer h3{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+hr {
+    display: block;
+    margin: 0.5rem -1000px 0.3rem 0;
+    padding: auto 0px auto auto;
+    border: 1.5px solid #f1cabd;
+}
+#socialmedia {
+    display: flex;
+    gap: 1rem;
+    margin-top: -1.5rem;
+
+}
+#content {
+    background-color: #faefeb;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.menu1, #sobre, #pagamento{
+    text-align: left;
+}
+.menu1 a:hover, #sobre a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* logo das redes sociais */
+#socialmedia .footer-link2 {
+    display: flex;
+    align-items: center;
+    /* alinhando itens no fundo */
+    justify-content: center;
+    /* alinhando itens no fundo */
+    height: 30px;
+    width: 30px;
+    color: #000;
+    transition: all 0.2s;
+    font-size: 40px;
+    margin: auto auto 10px 10px;
+}
+a:link, a:visited, a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+/* parte do copyright */
+#copyright {
+    display: flex;
+    /* deixa toda a label e a imagem em linha */
+    justify-content: center;
+    background-color: #f7dbd2;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    /* mudando a grossura do texto */
+}
+
+/* imagens */
+img[alt="tel"], img[alt="loc"] {
+    width: 20px;
+    justify-content: center;
+}
+.logo1 {
+    width: 150px;
+    margin-top: 40px;
+}
+.cartoes {
+    width: 45px;
+    margin: 10px 20px 0 0;
+}
+
+@media screen and (max-width:426px) {
+    #content {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 5rem;
+    }
+}
