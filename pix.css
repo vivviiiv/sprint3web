@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  background-color: #eee;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inicio {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  /* background-color: #d29c9c; */
+}
+
+img[alt=qrcode] {
+  width: 250px;
+  height: auto;
+  margin: 80px 0 20px 0;
+  
+}
+
+.caixa {
+   background-color: #ffffff; 
+
+  display: flex;
+  /* width: 400px; */
+  height: 600px;
+  justify-content: center;
+  border-radius: 6px;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.copia {
+  display: flex;
+  margin: 60px 20px 0 20px;
+  align-items: center;
+}
+
+button {
+  height: 500px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 700;
+  margin: 10px 20px 10px 10px;
+  width: 200px;
+  height: 40px;
+  align-items: center;
+  color: #fff;
+  background-color: #565554;
+  justify-items: center;
+}
+
+
+.agendar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.agendar:hover {
+  cursor: pointer;
+  transition: 0.15s;
+  background-color: #d29c9c;
+}
+
+
+.voltar{
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  font-weight: 700;
+  margin: 10px 10px auto 10px;
+  justify-content: left;
+}
+.seta {
+  background-color: #ffffff00;
+  color: #565554;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  float: left;
+  transform: translate(-350%, -560%);
+}
+
+.seta:hover {
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.seta:hover {
+  color: #d29c9c;
+}
+
+  #copiar{
+    width: 92%;
+    position: relative;
+    left: -8px;
+   
+  }
+
+  #copiar:hover{
+    cursor: pointer;
+    transition: 0.15s;
+    background-color: #d29c9c;
+    
+  }

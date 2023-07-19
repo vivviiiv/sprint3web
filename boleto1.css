@@ -1,0 +1,27 @@
+.boleto{
+    align-items: center;
+    justify-content: center;
+}
+.agendar {
+   
+    padding: 10px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #545556;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+   left:300px;
+    width: 300px;
+    height: 40px;
+    
+  }
+  
+  .agendar:hover {
+    background-color: #d29c9c;
+  }

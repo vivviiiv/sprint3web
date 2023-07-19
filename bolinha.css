@@ -1,0 +1,275 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    background: #fff;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+/* tamanho da página sem o footer (se der problema é só aumentar) */
+main {
+    height: 60vh;
+}
+/* começo da parte de cima LOGO PESQUISA ENTRAR */
+.acima {
+    background-color: #f7dbd2;
+    display: flex;
+    padding: 7px 10px 7px 20px;
+    margin: 0 0 0 0;
+    justify-content: flex-end;
+    align-items: center;
+    color: #252627;
+    /* background-color: #b1835d; */
+}
+.logo{
+    /* background-color: #b15d9f; */
+    /* margin: 5px 800px 0 40px; */
+    margin: 7px 940px 3px 40px;
+    position:absolute;
+}
+img[alt="logo"] {
+    width: 200px;
+    margin: 0;
+    height: auto;
+    padding-bottom: 0px;
+}
+.login{
+    width: 38px;
+    height: 38px;
+    margin: 0 50px 0 0;
+    padding: 0 0 -10px 0;
+    /* background-color: #5cb16e; */
+}
+img[alt="login"] {
+    width: 44px;
+    height: 44px;
+    margin: -3px 40px -6px 0;
+    padding: 0 0 0 0;
+    border: none;
+}
+/* BOTÃO DE PESQUISA */
+.caixa-search {
+    /* background-color: #5cb16e; */
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 38px;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    align-items: center;
+}
+.caixa-search:hover > .caixa-texto {
+    width: 220px;
+    padding: 0;
+}
+.caixa-search:hover > .botao-search{
+    background-color: #ffffff;
+    color: #252627;
+    margin-left: 30px;
+}
+.botao-search {
+    color: #fff;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: #252627;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    transition: 0.15s;
+}
+.botao-search i{
+    color: #f7dbd2;
+}
+.caixa-search:hover i{
+    color: #252627;
+}
+.caixa-texto {
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    /* background-color: #B05D61; */
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 38px;
+    width: 0px;
+    cursor: pointer;
+}
+/* HOVER */
+.login img:hover, .prev-button:hover, .next-button:hover {
+    /* color: #B05D61; */
+    opacity: 0.7;
+    transition: 0.15s;
+    cursor: pointer;
+}
+/* começo do menu */
+.menu {
+    background-color: #faefeb;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1.5px solid #f7dbd2;
+    /* border-bottom: 1.5px solid #39A9DB; */
+    /* background-color: #b15d9f; */
+}
+/* deixar a borda no div item quando tiver o hover */
+.item {
+    opacity: 100%;
+    width: 130px;
+    height: auto;
+    padding: 0 8px 0 8px;
+    margin: 8px 20px 8px 0;
+    color: #252627;
+    text-decoration: none;
+    text-align: center;
+    /* background-color: #5cb16e; */
+}
+.item a {
+    color: #252627;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 17px;
+}
+.item a:hover {
+    border-bottom: #252627 1.8px solid;
+    border-width: 1.8px;
+    transition: 0.085s;
+}
+
+/* FIM DO MENU */
+
+
+
+/* filtros com fotos dos animais */
+.bolinhas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 100px 40px 0px 40px;
+    
+    /* background-color: #5cb16e; */
+}
+
+.bolinhas img {
+    width: 150px;
+    height: 150px;
+    background-color: #ededed;
+    padding: 10px;/* o padding esta servindo pra mudar o tamanho não questione só utilize eu tambem não sei o pq/ */
+    margin-bottom: 8px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px #f7dbd26e;
+}
+
+.bolinhas img:hover, .bolinhas a:hover img {
+    transform: scale(110%);
+    transition: 0.2s;
+    background-color: #f7dbd2;
+    /* background-color: #fff; */
+}
+
+.bolinhas a {
+    text-decoration: none;
+    color: #252627;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* começo do footer */
+footer {
+    width: 100%;
+    color: #252627;
+    font-size: 17px;
+}
+h3{
+    color: #252627;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+hr {
+    display: block;
+    margin: 0.5rem -900px 0.3rem 0;
+    padding: auto 0px auto auto;
+    border: 1.5px solid #f1cabd;
+}
+#tudo {
+    background-color: #faefeb;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem 3.5rem;
+}
+#social {
+    display: flex;
+    gap: 1rem;
+    margin-top: -1.5rem;
+}
+.menu1, footer #sobre, footer #pagamento{
+    text-align: left;
+}
+.menu1 a:hover, footer #sobre a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* div das redes sociais */
+footer #social .link2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    transition: all 0.15s;
+    font-size: 40px;
+    margin: auto auto 10px 10px;
+}
+/* imagens das redes sociais */
+footer #social i:hover{
+    color: #d29c9c;
+    transition: 0.15s;
+}
+footer #social i{
+    color: #565554;
+}
+/* parte do copyright */
+footer #copyright {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #f7dbd2;
+    color: #252627;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/* imagens do footer */
+footer img[alt="tel"], footer img[alt="loc"] {
+    width: 20px;
+    justify-content: center;
+}
+footer .logo1 {
+    width: 150px;
+    margin-top: 40px;
+}
+footer .cartoes {
+    width: 45px;
+    margin: 10px 20px 0 0;
+}
+
+/* todos os links do site */
+a:link, a:visited, a:active {
+    color: #252627;
+    text-decoration: none;
+}

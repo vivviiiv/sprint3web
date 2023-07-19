@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script type="text/javascript" src="calendario.js"></script>
+    <link rel="stylesheet" href="calendario.css">
+    <link rel="shortcut icon" href="img/logop.png" type="image/x-icon">
+    <title>Calendário</title>
+</head>
+
+<body>
+    <div class="acima">
+        <div class="logo"><a href="index.html"><img src="img/logom.png" alt="logo"></a></div>
+        <section class="caixa-search">
+            <input class="caixa-texto" type="text" name="" placeholder=" Pesquisar...">
+            <a class="botao-search" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </section>
+        <div class="login"><a href="login.html"><img src="img/user.png" alt="login"></a></div>
+    </div>
+    <!-- MENU -->
+    <div class="menu">
+        <div class="item"><a href="bolinha.html">Catálogo</a></div>
+        <div class="item"><a href="calendario.html">Calendário</a></div>
+        <div class="item"><a href="catalogo.html">Produtos</a></div>
+    </div>
+
+
+    <main>
+
+        <div class="agendar">
+            <div class="box"></div>
+            <h4 id="hora">Horarios disponíveis</h4><br>
+            <div class="horas">
+
+                <input type="radio" id="card" name="horario" value="horario">
+                <label for="card">08:00</label><br>
+                <input type="radio" id="boleto" name="horario" value="horario">
+                <label for="boleto">12:00</label><br>
+                <input type="radio" id="pix" name="horario" value="horario">
+                <label for="pix">14:00</label><br>
+                <input type="radio" id="boleto" name="horario" value="horario">
+                <label for="boleto">18:00</label><br>
+                <input type="radio" id="boleto" name="horario" value="horario">
+                <label for="boleto">15:00</label><br>
+                <input type="radio" id="boleto" name="horario" value="horario">
+                <label for="boleto">20H</label><br>
+                <input type="radio" id="boleto" name="horario" value="horario">
+                <label for="boleto">13H</label><br>
+                <input type="radio" id="boleto" name="horario" value="horario">
+                <label for="boleto">10H</label><br>
+            </div>
+
+            <div class="mapa">
+                <h3 id="maps">Pet shops disponíveis</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29233.07416626803!2d-46.56494021415707!3d-23.671155813792144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4265b2a3173b%3A0x2ccc6f3fa61aa425!2sPet%20Shop%20e%20Veterin%C3%A1ria%20-%20Vira%20Lata!5e0!3m2!1spt-BR!2sbr!4v1687444538397!5m2!1spt-BR!2sbr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <div class="conteudo">
+                <div class="calendario">
+                    <header>
+                        <h2 id="mes"></h2>
+                        <a class="btn-ant" id="btn_ant"><
+                            </a>
+                                <a class="btn-pro" id="btn_pro">></a>
+                    </header>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>SEG</td>
+                                <td>TER</td>
+                                <td>QUA</td>
+                                <td>QUI</td>
+                                <td>SEX</td>
+                                <td>SÁB</td>
+                                <td>DOM</td>
+                            </tr>
+                        </thead>
+                        <tbody id="dias">
+                            <!--Os dias são feitos no JavaScript-->
+                        </tbody>
+                        <h2 class="ano" id="ano"></h2>
+
+                        <!--O ano e o mês e feito pelo JavaScript-->
+                        <a href="#"><button type="button" class="AGENDAR">Agendar</button></a>
+                    </table>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <footer>
+                        <div id="tudo">
+                            <div id="contacts">
+                                <div id="social">
+
+                                    <a href="#" class="link2" id="e-mail">
+                                        <i class="fa-solid fa-envelope"></i></a>
+
+                                    <a href="#" class="link2" id="linked">
+                                        <i class="fa-brands fa-linkedin"></i></a>
+
+                                    <a href="#" class="link2" id="instagram">
+                                        <i class="fa-brands fa-square-instagram"></i></a>
+
+                                    <a href="#" class="link2" id="facebook">
+                                        <i class="fa-brands fa-square-facebook"></i></a>
+                                </div>
+
+                                <hr>
+                                <img src="img/logop.png" class="logo1">
+                                </hr>
+                            </div>
+
+
+                            <!-- coluna blogs -->
+                            <ul class="listt">
+                                <br><br><br>
+
+                                <h3>Entre em Contato</h3><br>
+                                <img src="img/telefone.png" alt="tel">
+
+                                Telefone:
+                                <p> (11) 9349 - 3759</p>
+
+                                <br>
+
+                                <img src="img/localizacao.png" alt="loc">
+
+                                Endereços:
+                                <p>Avenida dos Imigrantes, 453<br>
+                                    Rua Dr. Miguel Paulo Capalbo, 15</p>
+
+                            </ul>
+
+                            <!-- coluna menu -->
+                            <ul class="menu11">
+                                <br><br><br>
+                                <h3>Menu</h3><br>
+                                <a href="index.html">
+                                    <p>Home</p>
+                                </a><br>
+                                <a href="calendario.html">
+                                    <p>Agende Nossos Serviços</p>
+                                </a><br>
+                                <a href="catalogo.html">
+                                    <p>Nossos Produtos</p>
+                                </a>
+                            </ul>
+
+                            <div id="sobre">
+                                <br><br><br>
+                                <h3>Quem somos</h3><br>
+                                <a href="sobre.html">
+                                    <p>Sobre a Empresa</p>
+                                </a><br>
+                                <a href="parcerias.html">
+                                    <p>Lojas Parceiras</p>
+                                </a><br>
+                                <a href="politicas.html">
+                                    <p>Políticas de Uso</p>
+                                </a>
+                            </div>
+
+                            <div id="pagamento">
+                                <br><br><br>
+                                <h3>Meios de Pagamento</h3>
+                                <img src="img/visa.png" class="cartoes">
+                                <img src="img/mastercard.png" class="cartoes">
+                                <img src="img/varredura.png" class="cartoes">
+                                <img src="img/barras.png" class="cartoes">
+                                <img src="img/paypal.png" class="cartoes">
+                                <img src="img/pix.png" class="cartoes">
+                            </div>
+                        </div>
+
+                        <div id="copyright">
+                            &#169
+                            2023 - Todos os direitos reservados
+                        </div>
+                    </footer>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

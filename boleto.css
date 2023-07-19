@@ -1,0 +1,100 @@
+body {
+  background-color: #ededed;
+}
+
+.square {
+  width: 1100px;
+  height: 540px;
+  border: none;
+  padding: 50px 20px 50px 20px;
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.codigo {
+  padding: 20px;
+  position: relative;
+  top: 150px;
+  margin-left: -150px;
+  justify-content: space-between;
+}
+
+.valor {
+  position: relative;
+  left: 50px;
+  font-size: 18px;
+  display: flex;
+  flex-flow: row;
+
+}
+
+.botao-personalizado {
+
+  padding: 10px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #545556;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: -388px;
+  width: 200px;
+  height: 40px;
+  left: 80%;
+}
+
+.botao-personalizado:hover {
+  background-color: #d29c9c;
+}
+
+.vencimento {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  left: 800px;
+  top: -555px;
+}
+
+.linha {
+  width: 1000px;
+  display: flex;
+  flex-flow: column;
+}
+
+.sofalta {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sofalta h2 {
+  margin: 35px auto auto 300px;
+}
+
+.seta {
+  background-color: #ffffff00;
+  color: #565554;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  float: left;
+}
+
+.seta:hover {
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.seta:hover {
+  color: #d29c9c;
+}

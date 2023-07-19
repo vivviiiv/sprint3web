@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Copiar Código</title>
+</head>
+<body>
+    <img src="###"><br>
+    <button onclick="copiarCodigo()">
+        Copiar Código
+    </button>
+
+    <script>
+        function copiarCodigo() {
+            let codigoAleatorio = gerarCodigoAleatorio();
+            let input = document.createElement("textarea");
+            input.value = codigoAleatorio;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand("copy");
+            document.body.removeChild(input);
+            alert("O código aleatório foi copiado para a área de transferência!");
+        }
+
+        function gerarCodigoAleatorio() {
+            let codigo = Math.floor(Math.random() * 1000000000000).toString().padStart(8, '0');
+            return codigo;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logop.png" type="image/x-icon">
+    <title>Pix</title>
+    <link rel="stylesheet" href="pix.css">
+
+</head>
+
+<body>
+    <div class="seta">
+        ㅤ<a href="index.html"><img src="img/Seta.png" width="70px"></a></div>
+    </div>
+    <div class="inicio">
+        <img src="img/icons8-ok-50.png" width="100px">
+        <h1>PEDIDO GERADO!</h1>
+        <h7>agora você só precisa finalizar o pagamento</h7>
+        <br> <br>
+        <hr>
+        <h2>Sua compra está reservada e aguardando pagamento</h2>
+
+        <div class="caixa"><br><br>
+            <img src="img/qrcode.jfif" alt="qrcode">
+           
+           <a href="#"> <button id="copiar"  onclick="copiarCodigo()">
+                COPIE SEU CÓDIGO PIX
+            </button></a>
+
+            <a href="index.html"><button class="agendar">JÁ  FIZ MEU PAGAMENTO</button></a>
+
+            <h4>-Abra o aplicativo do seu banco no celular<br>
+                -Selecione a opção de pagar com o pix / escanear QR code <br>
+                -Após o pagamento, você receberá por email os dados de acesso à<br>
+                sua compra (verifique a caixa de SPAM)
+            </h4><br><br><br>
+        </div>
+    </div>
+
+    <script>
+        function copiarCodigo() {
+            let codigoAleatorio = gerarCodigoAleatorio();
+            let input = document.createElement("textarea");
+            input.value = codigoAleatorio;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand("copy");
+            document.body.removeChild(input);
+            alert("O código do pix foi copiado!");
+        }
+
+        function gerarCodigoAleatorio() {
+            let codigo = Math.floor(Math.random() * 1000000000000).toString().padStart(8, '0');
+            return codigo;
+        }
+    </script>
+</body>
+</html>

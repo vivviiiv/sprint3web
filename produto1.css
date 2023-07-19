@@ -1,0 +1,516 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background: #fff;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* tamanho da página sem o footer (se der problema é só aumentar) */
+main {
+    height: 100vh;
+}
+/* começo do MENU */
+.acima {
+    background-color: #f7dbd2;
+    display: flex;
+    padding: 7px 10px 7px 20px;
+    margin: 0 0 0 0;
+    justify-content: flex-end;
+    align-items: center;
+    color: #252627;
+    /* background-color: #b1835d; */
+}
+.logo {
+    /* background-color: #b15d9f; */
+    /* margin: 5px 800px 0 40px; */
+    margin: 7px 940px 3px 40px;
+    position: absolute;
+}
+img[alt="logo"] {
+    width: 200px;
+    margin: 0;
+    height: auto;
+    padding-bottom: 0px;
+}
+.login {
+    width: 38px;
+    height: 38px;
+    margin: 0 50px 0 0;
+    padding: 0 0 -10px 0;
+    /* background-color: #5cb16e; */
+}
+img[alt="login"] {
+    width: 44px;
+    height: 44px;
+    margin: -3px 40px -6px 0;
+    padding: 0 0 0 0;
+    border: none;
+}
+.caixa-search {
+    /* background-color: #5cb16e; */
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 38px;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    align-items: center;
+}
+.caixa-search:hover>.caixa-texto {
+    width: 220px;
+    padding: 0;
+}
+.caixa-search:hover>.botao-search {
+    background-color: #ffffff;
+    color: #252627;
+    margin-left: 30px;
+}
+.botao-search {
+    color: #fff;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: #252627;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    transition: 0.15s;
+}
+
+.botao-search i {
+    color: #f7dbd2;
+}
+.caixa-search:hover i {
+    color: #252627;
+}
+.caixa-texto {
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    /* background-color: #B05D61; */
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 38px;
+    width: 0px;
+    cursor: pointer;
+}
+/* HOVER */
+.login img:hover,
+.prev-button:hover,
+.next-button:hover {
+    /* color: #B05D61; */
+    opacity: 0.7;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.menu {
+    background-color: #faefeb;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1.5px solid #f7dbd2;
+    /* border-bottom: 1.5px solid #39A9DB; */
+    /* background-color: #b15d9f; */
+}
+.item {
+    opacity: 100%;
+    width: 130px;
+    height: auto;
+    padding: 0 8px 0 8px;
+    margin: 8px 20px 8px 0;
+    color: #252627;
+    text-decoration: none;
+    text-align: center;
+    /* background-color: #5cb16e; */
+}
+.item a {
+    color: #252627;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 17px;
+}
+.item a:hover {
+    border-bottom: #252627 1.8px solid;
+    border-width: 1.8px;
+    transition: 0.085s;
+}
+/* FIM DO MENU */
+/* começo do footer */
+footer {
+    width: 100%;
+    color: #252627;
+    font-size: 17px;
+}
+footer h3 {
+    color: #252627;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+footer hr {
+    display: block;
+    margin: 0.5rem -900px 0.3rem 0;
+    padding: auto 0px auto auto;
+    border: 1.5px solid #f1cabd;
+}
+footer #tudo {
+    background-color: #faefeb;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem 3.5rem;
+}
+footer #social {
+    display: flex;
+    gap: 1rem;
+    margin-top: -1.5rem;
+}
+footer .menu1,
+footer #sobre,
+footer #pagamento {
+    text-align: left;
+}
+footer .menu1 a:hover,
+footer #sobre a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* div das redes sociais */
+footer #social .link2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    transition: all 0.15s;
+    font-size: 40px;
+    margin: auto auto 10px 10px;
+}
+/* imagens das redes sociais */
+footer #social i:hover {
+    color: #d29c9c;
+    transition: 0.15s;
+}
+footer #social i {
+    color: #565554;
+}
+/* parte do copyright */
+footer #copyright {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #f7dbd2;
+    color: #252627;
+    font-size: 15px;
+    font-weight: 100;
+}
+/* imagens do footer */
+footer img[alt="tel"],
+footer img[alt="loc"] {
+    width: 20px;
+    justify-content: center;
+}
+footer .logo1 {
+    width: 150px;
+    margin-top: 40px;
+}
+footer .cartoes {
+    width: 45px;
+    margin: 10px 20px 0 0;
+}
+/* todos os links do site */
+a:link,
+a:visited,
+a:active {
+    color: #252627;
+    text-decoration: none;
+}
+
+
+/* começo do main */
+.caixona{
+    /* background-color: #a3c271; */
+    height: 570px;
+    width: 1140px;
+    margin: 20px 40px 20px 40px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+
+}
+
+.descr{
+    width: 90%;
+    /* background-color: #6aa2b2; */
+    border: 2.5px solid #f7dbd2;
+    background-color: #edededb0;
+    display: flex;
+    margin: 40px 20px 40px 20px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 0 8px #dbdbdb56;
+    border-radius: 10px;
+}
+.descr img{
+    width: 330px;
+    height: auto;
+    margin: 0 0 0 10px;
+}
+.descricao{
+    width: 70%;
+    margin: 0 30px 0 0;
+    color: #252627;
+    font-size: 20px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+.descricao .p{
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+.descricao p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.botao, .botao1{
+        width: 100%;
+        height: 35px;
+        font-size: 17px;
+        border: none;
+        outline: none;
+        border-radius: 7px;
+        font-weight: 700;
+        margin: 40px 10px 10px 10px;
+        /* background-color: #885053; */
+
+}
+.botao{
+    background-color: #565554;
+    color: #fff;
+}
+.botao a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.botao:hover{
+        cursor: pointer;
+        transition: 0.15s;
+        background-color: #d29c9c;
+}
+.botao1{
+        background-color: #ffffff00;
+        color: #565554;
+        margin-top: 0;
+        margin-bottom: 20px;
+}
+.botao1:hover {
+    color: #d29c9c;
+    cursor: pointer;
+}
+.quantidade, .quantidad2 {
+    outline: none;
+    height: 30px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1.5px solid #dbdbdb;
+}
+
+.caixcom{
+    width: 90%;
+    height: 300px;
+    background-color: #6aa2b2;
+    border-bottom: 2.5px solid #f7dbd2;
+    border-left: 2.5px solid #f7dbd2;
+    border-right: 2.5px solid #f7dbd2;
+    /* background-color: #fff; */
+    display: flex;
+    margin: 0 20px 0px 20px;
+    padding: 10px 30px 10px 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.caicom{
+    width: 93.5%;
+    background-color: #6aa2b2;
+    border-top: 2.5px solid #f7dbd2;
+    border-left: 2.5px solid #f7dbd2;
+    border-right: 2.5px solid #f7dbd2;
+    border-bottom: none;
+    /* background-color: #fff; */
+    display: flex;
+    margin: 40px 20px 0 20px;
+    padding: 2px 10px 0 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/*
+
+
+
+.rating {
+    display: inline-block;
+    position: absolute;
+    top: 43%;
+    right: 720px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    float: right;
+    color: #ddd;
+}
+
+.rating label:before {
+    content: '\2605';
+    font-size: 25px;
+}
+
+.rating input:checked~label {
+    color: #ffcc00;
+}
+
+
+.caixa-texto {
+    width: 89%;
+    height: 50px;
+    padding: 5px;
+    border: 3px solid #f7dbd2;
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    border-radius: 20px;
+}
+
+.caixacom {
+    width: 88%;
+    height: 360px;
+    border: 5px solid #f7dbd2;
+    padding: 10px;
+    position: absolute;
+    top: 600px;
+    left: 59px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.caixacom2 {
+    width: 20%;
+    height: 150px;
+    border: 2px solid #f7dbd2;
+    padding: 10px;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    border-radius: 15px;
+}
+
+.caixacom3 {
+    width: 20%;
+    height: 150px;
+    border: 2px solid #f7dbd2;
+    padding: 10px;
+    position: absolute;
+    top: 200px;
+    left: 38%;
+    border-radius: 15px;
+}
+
+.caixacom4 {
+    width: 20%;
+    height: 150px;
+    border: 2px solid #f7dbd2;
+    padding: 10px;
+    position: absolute;
+    top: 200px;
+    left: 75%;
+    border-radius: 15px;
+}
+
+
+i {
+    position: absolute;
+    left: 200px;
+}
+
+h2 {
+    position: absolute;
+    left: 25px;
+}
+
+img [alt=usuario] {
+    width: 5px;
+}
+
+.botao {
+    background-color: #f7dbd2;
+    border: none;
+    color: rgb(11, 10, 10);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    right: 7%;
+    top: 80%;
+}
+
+.botao:hover {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid #f7dbd2;
+
+}
+
+img[alt=icon] {
+    width: 25px;
+    top: 220px;
+    left: 50px;
+    position: absolute;
+}
+
+img[alt=icon2] {
+    width: 25px;
+    top: 220px;
+    left: 450px;
+    position: absolute;
+}
+
+img[alt=icon3] {
+    width: 25px;
+    top: 220px;
+    left: 870px;
+    position: absolute;
+}
+
+img[alt=icon4] {
+    width: 50px;
+    top: 80px;
+    left: 18px;
+    position: absolute;
+} */

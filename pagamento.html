@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="shortcut icon" href="logop.png" type="image/x-icon">
+    <title>Dados de Pagamento</title>
+</head>
+
+<body>
+    <div class="seta">
+        ㅤ<a href="index.html"><img src="" width="70px"></a></div>
+    </div>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/pets.png" alt="300">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <br><br>
+                        <h1>Dados para Pagamento</h1>
+                    </div>
+                   
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+<br>
+                    
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    
+<br>
+
+                    <div class="input-box">
+                        <label for="confirmPassword">CPF ou CNPJ</label>
+                        <input type="text" maxlength="14" class="card-number-input"  placeholder="xxx-xxx-xxx-xx" required>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Modo de Pagamento</h6>
+                    </div>
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Pix</label>ㅤ
+                            <a href="pix.html"><img src="img/pixlogo.png" width="30px"></a>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Cartão</label> ㅤ
+                          <a href="cartao.html"><img src="img/cartoes.png" width="30px"></a>  
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Boleto</label>ㅤ
+                            <a href="boleto.html"><img src="img/boletologo.png" width="30px"></a>
+                        </div>
+
+                       
+                    </div>
+                </div>
+
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
